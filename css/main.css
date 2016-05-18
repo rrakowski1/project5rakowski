@@ -11,8 +11,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-#contact-page {
-  background-color: #ccc;
+#contact-page .form {
+  margin-left: 30%;
+}
+#contact-page .h1 {
+  text-align: center;
 }
 #gallery-pages {
   background-color: #ccc;
