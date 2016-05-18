@@ -13,18 +13,71 @@
 .logo {
   width: 50%;
   margin: 3%;
+  border-bottom: 1px solid black;
 }
 
-p {
-  .opacity(0.8);
+span {
+    display: block;
+  }
+
+//.gallery-pages {
+//    clear: both;
+//    text-align:center;
+//  }
+
+.gallery-pages {
+  display: inline-block;
+  margin: 20px 50px;
+  }
+
+.gallery-pages img {
+  display: block;
+  }
+
+.gallery-pages h4 {
+  display: inline;
 }
 
-.navigation {
-  position: absolute;
+ul.topnav {
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   bottom: 0;
-  width: 100%;
+  overflow: hidden;
+}
+
+ul.topnav li {
   float: right;
 }
+ul.topnav li a {
+  display: inline-block;
+  color: Black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  ul.topnav li a {
+    font-size: 18px;
+    padding: 8px 10px;
+  }
+}
+
+ul.topnav li a:hover {
+  background-color: #f2f2f2;
+}
+
+
+//.navigation {
+//  position: absolute;
+//  bottom: 0;
+//  width: 100%;
+//  float: right;
+//}
 
 .dandilion {
   float: right;
