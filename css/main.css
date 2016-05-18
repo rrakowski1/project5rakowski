@@ -18,13 +18,14 @@
   text-align: center;
 }
 .content {
-  background-color: black;
   margin: 5%;
 }
 .finearts,
 .graphicarts,
 .productbranding {
   padding: 5%;
+  margin-bottom: 5%;
+  background-color: black;
 }
 img {
   float: center;
@@ -36,6 +37,26 @@ h4 {
 }
 #resume-page {
   background-color: #ccc;
+}
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+.home {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  position: relative;
+}
+.home .dandilion {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 30%;
+  max-width: 300px;
 }
 .logo {
   width: 50%;
@@ -85,12 +106,8 @@ ul.topnav li a {
 ul.topnav li a:hover {
   background-color: #f2f2f2;
 }
-.dandilion {
-  float: right;
-  width: 30%;
-  margin: 5%;
-  bottom: 0%;
-}
 .footer {
   margin-bottom: 3%;
+  color: white;
+  background: black;
 }
