@@ -4,6 +4,18 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
+#about-page {
+  background-color: #ccc;
+}
+#contact-page {
+  background-color: #ccc;
+}
+#gallery-pages {
+  background-color: #ccc;
+}
+#resume-page {
+  background-color: #ccc;
+}
 p {
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
