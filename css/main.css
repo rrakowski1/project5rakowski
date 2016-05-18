@@ -12,3 +12,8 @@ p {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
   filter: alpha(opacity=80);
 }
+.navigation {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
