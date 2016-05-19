@@ -125,7 +125,7 @@ body {
   bottom: 0;
   right: 5%;
   width: 30%;
-  max-width: 300px;
+  max-width: 200px;
 }
 .logo {
   width: 50%;
@@ -136,7 +136,7 @@ span {
 }
 .gallery-pages {
   display: block;
-  padding: 20px 50px;
+  padding: 20px 20px;
 }
 .gallery-pages a {
   display: inline-block;
@@ -184,12 +184,18 @@ ul.topnav li a:hover {
 }
 @media screen and (min-width: 480px) {
   .gallery-pages {
-    width: 50%;
+    width: 25%;
     float: left;
   }
 }
 @media screen and (min-width: 768px) {
   .gallery-pages {
-    width: 33.33%;
+    width: 20%;
+    margin-bottom: 20%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gallery-pages {
+    width: 40%;
   }
 }
