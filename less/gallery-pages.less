@@ -4,6 +4,12 @@
 
 }
 
+.gallery {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  position: relative;
+}
+
 .content {
   margin: 5%;
 }
@@ -11,16 +17,23 @@
 .finearts,
 .graphicarts,
 .productbranding {
-  padding: 5%;
-  margin-bottom: 5%;
   background-color: black;
-}
-
-img {
+  margin: 5%;
   float: center;
-}
-
-h2, h4 {
+  border: 5%;
+  padding: 5%;
+  box-shadow: 10px 10px 5px #888888;
   text-align: center;
-  color: white;
+
+  a {
+    display: inline-block;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  h2, h4 {
+    color: white;
+  }
 }
