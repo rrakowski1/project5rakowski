@@ -10,6 +10,21 @@
 @import "main-gallery-page.less";
 @import "resume-page.less";
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// clearfix
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 html,
 body {
   min-height: 100%;
@@ -27,6 +42,7 @@ body {
 
   .dandilion {
     position: absolute;
+    z-index: 0;
     bottom: 0;
     right: 5%;
     width: 30%;
@@ -49,17 +65,22 @@ span {
 //  }
 
 .gallery-pages {
+  display: block;
+  padding: 20px 50px;
+}
+
+.gallery-pages a {
   display: inline-block;
-  margin: 20px 50px;
-  }
+}
 
 .gallery-pages img {
-  display: block;
-  width: 30%;
-  }
+  // display: block;
+  // width: 30%;
+  width: 100%;
+}
 
 .gallery-pages h4 {
-  display: inline;
+  // display: inline;
   text-align: center;
 }
 
@@ -109,4 +130,20 @@ ul.topnav li a:hover {
   margin-bottom: 3%;
   color: white;
   background: black;
+}
+
+
+@media screen and (min-width: 480px) {
+
+ .gallery-pages {
+   width: 50%;
+   float: left;
+ }
+}
+
+@media screen and (min-width: 768px) {
+
+ .gallery-pages {
+   width: 33.33%;
+ }
 }
