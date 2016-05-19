@@ -4,12 +4,20 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
-#about-page {
-  background-image: url("img/background.jpg");
-  background-size: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
+.about {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  position: relative;
+}
+.about .dandilion {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 30%;
+  max-width: 200px;
+}
+p {
+  Margin: 15%;
 }
 .form {
   margin-left: 10%;
@@ -48,8 +56,22 @@ h4 {
   text-align: center;
   color: white;
 }
-#resume-page {
-  background-color: #ccc;
+.resume {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  position: relative;
+}
+.resume .dandilion {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 30%;
+  max-width: 200px;
+}
+.footer {
+  margin-bottom: 3%;
+  color: white;
+  background: black;
 }
 html,
 body {
