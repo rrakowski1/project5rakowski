@@ -16,7 +16,7 @@
   width: 30%;
   max-width: 200px;
 }
-p {
+.about p {
   Margin: 15%;
 }
 .form {
@@ -38,22 +38,41 @@ p {
   width: 30%;
   max-width: 200px;
 }
+.gallery {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  position: relative;
+}
 .content {
   margin: 5%;
 }
 .finearts,
 .graphicarts,
 .productbranding {
-  padding: 5%;
-  margin-bottom: 5%;
   background-color: black;
-}
-img {
+  margin: 5%;
   float: center;
-}
-h2,
-h4 {
+  border: 5%;
+  padding: 5%;
+  box-shadow: 10px 10px 5px #888888;
   text-align: center;
+}
+.finearts a,
+.graphicarts a,
+.productbranding a {
+  display: inline-block;
+}
+.finearts a img,
+.graphicarts a img,
+.productbranding a img {
+  max-width: 100%;
+}
+.finearts h2,
+.graphicarts h2,
+.productbranding h2,
+.finearts h4,
+.graphicarts h4,
+.productbranding h4 {
   color: white;
 }
 .resume {
@@ -73,6 +92,20 @@ h4 {
   color: white;
   background: black;
 }
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 html,
 body {
   min-height: 100%;
@@ -88,6 +121,7 @@ body {
 }
 .home .dandilion {
   position: absolute;
+  z-index: 0;
   bottom: 0;
   right: 5%;
   width: 30%;
@@ -101,15 +135,16 @@ span {
   display: inline;
 }
 .gallery-pages {
+  display: block;
+  padding: 20px 50px;
+}
+.gallery-pages a {
   display: inline-block;
-  margin: 20px 50px;
 }
 .gallery-pages img {
-  display: block;
-  width: 30%;
+  width: 100%;
 }
 .gallery-pages h4 {
-  display: inline;
   text-align: center;
 }
 ul.topnav {
@@ -146,4 +181,15 @@ ul.topnav li a:hover {
   margin-bottom: 3%;
   color: white;
   background: black;
+}
+@media screen and (min-width: 480px) {
+  .gallery-pages {
+    width: 50%;
+    float: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-pages {
+    width: 33.33%;
+  }
 }
